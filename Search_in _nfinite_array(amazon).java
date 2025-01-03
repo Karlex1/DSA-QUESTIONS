@@ -1,16 +1,16 @@
-public class InfiniteArray{
+public class Main{
   public static void main (String[] args){
     int[] arr={10,30,45,46,78,89,100,101,102,340,456,567,678,789};
     int target=100;
-    System.out.println(ans(arr,target)
+    System.out.println(ans(arr,target));
   }
   static int ans(int[] arr, int target){
    int start= 0;
     int end=1;
-    if (target>arr[end]){
+  while (target>arr[end]){
       //new start variable will be necessary to use previous start in end 
       int nstart=end+1;
-      int end=end+(end-start+1)*2;
+       end=end+(end-start+1)*2;
     start=nstart;}
     return binarysearch(arr,target,start,end);
   }
@@ -21,10 +21,10 @@ while(end>=start){
     start=mid+1;
   }else if(arr[mid]>target){
     end=mid-1;
-                           }else{
+            }else{
     return mid;
-                           }
+        }
 }return -1;
     
   }
-}
+// output. 6
