@@ -10,4 +10,14 @@ class BTOD{
     }
     return decimal;
   }
+
+  public static int binaryToDecimal(String n) {
+    int decimal = 0;
+    for (int i = 0; i < n.length(); i++) {
+      decimal = (decimal << 1) | (n.charAt(i) - '0');
+    }
+    return decimal;
+  }
+}
+
 }
