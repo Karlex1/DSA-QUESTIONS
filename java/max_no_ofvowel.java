@@ -1,3 +1,4 @@
+//sliding window
 class Solution {
     public int maxVowels(String s, int k) {
         String vowels="aeiouAEIOU";
