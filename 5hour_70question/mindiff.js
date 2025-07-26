@@ -60,3 +60,7 @@ var minimumAbsDifference = function(arr) {
     }
     return result;
 }
+
+/*Sorting brings elements with the smallest 
+differences close together, so instead of checking all n^2 combinations, 
+you only compare adjacent ones — that’s O(n log n) instead of O(n^2).*/
